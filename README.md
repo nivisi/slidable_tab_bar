@@ -9,11 +9,11 @@
 Add the dependency to **pubspec.yaml**:
 
 ```
-  dependencies:
-    slidable_tab_bar
-      git:
-        url: https://github.com/nivisi/slidable_tab_bar
-        ref: develop
+dependencies:
+  slidable_tab_bar
+    git:
+      url: https://github.com/nivisi/slidable_tab_bar
+      ref: develop
 ```
 
 ### Use it!
