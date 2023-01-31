@@ -1,4 +1,4 @@
 library slidable_tab_bar;
 
-export 'src/slidable_tab_bar.dart';
-export 'src/slideable_tab_bar_data.dart';
+export 'src/slidable_tab_bar.dart' hide PressableBuidler;
+export 'src/slidable_tab_bar_data.dart';

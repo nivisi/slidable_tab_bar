@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:slidable_tab_bar/src/slideable_tab_bar_data.dart';
+import 'package:slidable_tab_bar/src/slidable_tab_bar_data.dart';
 
 import 'helpers/calculate_text_size.dart';
 
@@ -32,7 +32,7 @@ class SlidableTabBar extends StatefulWidget {
   }) : super(key: key);
 
   /// Tabs of the widget.
-  final List<SlideableTabData> tabs;
+  final List<SlidableTabData> tabs;
 
   /// Padding of a single title widget.
   final EdgeInsets titleTextPadding;
