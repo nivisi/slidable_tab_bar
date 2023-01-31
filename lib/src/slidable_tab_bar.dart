@@ -373,7 +373,7 @@ class _SlidableTabBarState extends State<SlidableTabBar> {
             titleWidgetsContexts[index] = context;
             final text = Padding(
               padding: widget.titleTextPadding,
-              child: ValueListenableBuilder(
+              child: ValueListenableBuilder<TextStyle>(
                 valueListenable: textStylesNotifier[index]!,
                 builder: (context, textStyle, child) {
                   return Text(
@@ -407,7 +407,7 @@ class _SlidableTabBarState extends State<SlidableTabBar> {
               onTap: onTap,
               child: Padding(
                 padding: widget.titleTextPadding,
-                child: ValueListenableBuilder(
+                child: ValueListenableBuilder<TextStyle>(
                   valueListenable: textStylesNotifier[index]!,
                   builder: (context, textStyle, child) {
                     return Text(
@@ -458,10 +458,10 @@ class _SlidableTabBarState extends State<SlidableTabBar> {
                             color: sliderColor.withOpacity(.15),
                           ),
                         ),
-                        ValueListenableBuilder(
+                        ValueListenableBuilder<double>(
                             valueListenable: indicatorWidthNotifier,
                             builder: (context, width, child) {
-                              return ValueListenableBuilder(
+                              return ValueListenableBuilder<double>(
                                 valueListenable: indicatorLeadingOffsetNotifier,
                                 builder: (context, page, child) {
                                   final leadingOffset =
